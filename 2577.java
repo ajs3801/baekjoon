@@ -18,8 +18,8 @@ public class Main {
       System.out.println(num);
       numArray[num]++;
     }
-
-    for (Integer i:numArray) {System.out.println(numArray[i]);}
+    //logical error (i is not an index!)
+    for (Integer i:numArray) {System.out.println(i);}
 
     sc.close();
   }
