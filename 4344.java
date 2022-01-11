@@ -5,6 +5,7 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     
     int TestCase = sc.nextInt();
+    String[] resultArray = new String[TestCase];
 
     for (int i=0 ; i<TestCase ; i++){
       int studentNum = sc.nextInt();
@@ -29,10 +30,10 @@ public class Main {
 
       StringBuffer sb = new StringBuffer();
       sb.append(String.format("%.3f",result));
-      System.out.println(sb.toString());
+      resultArray[i] = sb.toString();
     }
 
-
+    for (String i:resultArray) {System.out.println(i + "%");}
     sc.close();
   }
 }
