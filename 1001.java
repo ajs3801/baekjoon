@@ -8,8 +8,6 @@ class Main {
     int B=0;
 
     A = sc.nextInt();
-    B = sc.nextInt();
-
-    System.out.println(A-B);
+    B 
   }
 }
